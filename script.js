@@ -79,19 +79,21 @@ form2.addEventListener("submit", function (e){
         }
     }
 });
+
+let errors = document.querySelectorAll(".red");
+let inputs = document.querySelectorAll(".check");
+
+form2.addEventListener("submit", showError);
+function showError(){
+    console.log(errors.length)
+    console.log(inputs.length)
+    for(let i = 0; i < inputs.length; i++){
+        if(inputs[i].value.length == 0){
+            errors[i].style.display = "block";
+        }else{
+            errors[i].style.display = "none";
+        }
+    }
+};
 //
 
-// let errors = document.querySelectorAll(".red");
-// let inputs = document.querySelectorAll(".inputUserInfo");
-//
-// form2.addEventListener("submit", showError);
-// function showError(){
-//     console.log(errors.length)
-//     console.log(inputs.length)
-//     // let max = errors.length > inputs.length ? errors.length : inputs.length;
-//     for(let i = 0; i < inputs.length; i++){
-//         if(inputs[i].value.length == 0){
-//             errors[i].style.display = "block";
-//         }
-//     }
-// };
