@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="logoCompany">
+            <img class="logoImg" src="./img/Addweb.jpg" alt="">
+            <div>
+                <h4 class="logo">AddWebSolution</h4>
+                <p>lets talk solution</p>
+            </div>
+        </div>
+        <div class="decor"></div>
+        <div class="decor left"></div>
+        <img class="bg" src="./img/image%201.jpg" alt="">
+        <div class="wrapper hide">
+            <h1 class="logo">Login</h1>
+            <h2>Welcome onboard with us!</h2>
+
+            <form name="loginForm">
+                <p class="userInfo">Username</p>
+                <input placeholder="Enter your username" name="userName" class="inputUserInfo" type="text">
+                <p class="userInfo">Password</p>
+                <div>
+                    <input placeholder="Enter your password" class="inputUserInfo position" id="password1" name="password" type="password">
+<!--                    <p class="rightSide red">Це поле обов'язкове для вводу</p>-->
+                    <i class="bi bi-eye-slash" id="togglePassword1"></i>
+                </div>
+                <p class="forgotPassword rightSide">Forgot Password?</p>
+                <input class="submit" name="submit" type="submit" value="Login">
+                <p class="newUser">New to logo? <a class="register" href="#">Register</a> Here</p>
+            </form>
+
+        </div>
+
+        <div class="wrapper registerWrapper">
+            <h1 class="logo">Registration</h1>
+            <h2>Welcome onboard with us!</h2>
+
+            <form name="registration">
+                <p class="userInfo">First name</p>
+                <input placeholder="Enter your first name" class="inputUserInfo" name="userFirstName" type="text">
+                <p class="rightSide red">Це поле обов'язкове для вводу</p>
+                <p class="userInfo">Last name</p>
+                <input placeholder="Enter your last name" class="inputUserInfo" name="userLastName" type="text">
+                <p class="rightSide red">Це поле обов'язкове для вводу</p>
+                <p class="userInfo">Username</p>
+                <input placeholder="Enter your username" class="inputUserInfo" name="username" type="text">
+                <p class="rightSide red">Це поле обов'язкове для вводу</p>
+                <p class="userInfo">Email</p>
+                <input placeholder="Enter your email" class="inputUserInfo" type="email">
+                <p class="rightSide red">Це поле обов'язкове для вводу</p>
+                <p class="userInfo">Password</p>
+                <div>
+                    <input placeholder="Enter your password" class="inputUserInfo position" id="password" name="password" type="password">
+                    <p class="rightSide red">Це поле обов'язкове для вводу</p>
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+                <p class="forgotPassword newPassword rightSide">Suggest a strong password?</p>
+                <input class="submit" type="submit" value="Register">
+                <p class="newUser">Already have an account? <a class="register login" href="#">Login</a> Here</p>
+            </form>
+
+        </div>
+
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

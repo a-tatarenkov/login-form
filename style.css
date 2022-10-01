@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+/*font-family: 'Iceland', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+}
+
+main .container{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+main .container .decor{
+    width: 200px;
+    height: 200px;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -18%;
+    left: 51%;
+}
+
+main .container .left{
+    width: 300px;
+    height: 150px;
+    top: -12%;
+    left: 0;
+    border-radius: 200px / 100px;
+}
+
+main .container .logoCompany{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    flex-wrap: wrap;
+    width: 18%;
+    top: 30px;
+    left: 30px;
+}
+
+main .container .logoCompany h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main .container .logoCompany p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: dodgerblue;
+}
+
+main .bg{
+    z-index: -999;
+    display: block;
+    width: 100%;
+    margin: 2% auto;
+}
+
+main .container .wrapper{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 5%;*/
+    /*width: 40%;*/
+    /*margin: 20px auto;*/
+    /*color: white;*/
+    /*background-color: rgba(201, 201, 201, 0.3);*/
+    /*border-radius: 20px;*/
+    /*padding: 25px 32px;*/
+    /*display: none;*/
+}
+
+main .container .hide{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 40%;
+    margin: 20px auto;
+    color: white;
+    background-color: rgba(201, 201, 201, 0.3);
+    border-radius: 20px;
+    padding: 25px 32px;
+    /*display: none;*/
+}
+
+main .container .registerWrapper{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 40%;
+    margin: 20px auto;
+    color: white;
+    background-color: rgba(201, 201, 201, 0.3);
+    border-radius: 20px;
+    padding: 25px 32px;
+    display: none;
+    max-height: 90%;
+    overflow-y: scroll;
+}
+
+main .container .wrapper .logo{
+    font-family: 'Iceland', cursive;
+    text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+    font-weight: 400;
+    font-size: 44px;
+    display: block;
+    padding-bottom: 12px;
+    width: 30%;
+    border-bottom: 2px white solid;
+}
+
+main .container .wrapper h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+main .container .wrapper form .userInfo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    margin: 30px 0 4px 0;
+}
+
+main .container .wrapper form .inputUserInfo{
+    background-color: rgba(201, 201, 201, 0.2);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border: rgba(255, 255, 255, 0.2) 1px solid;
+    border-radius: 10px;
+}
+
+main .container .wrapper form .inputUserInfo::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, .3);
+}
+
+main .container .wrapper form .rightSide{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: right;
+    margin: 8px 0 30px 0;
+    cursor: pointer;
+}
+
+main .container .wrapper form .red{
+    color: red;
+    display: none;
+}
+
+main .container .wrapper form div{
+    position: relative;
+}
+
+main .container .wrapper form i{
+    position: absolute;
+    top: 30%;
+    right: 15px;
+    cursor: pointer;
+}
+
+main .container .wrapper form .submit{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto 10px auto;
+    background-color: #A5D9D0;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .container .wrapper form .newUser{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
+main .container .wrapper form .newUser a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+
+.registerWrapper::-webkit-scrollbar {
+    width: 12px; /* ширина всей полосы прокрутки */
+}
+
+.registerWrapper::-webkit-scrollbar-track {
+    background: rgba(201, 201, 201, 0);        /* цвет зоны отслеживания */
+
+}
+
+.registerWrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(201, 201, 201, .3);    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+    border: rgba(255, 255, 255, 0.2) 1px solid;  /* отступ вокруг бегунка */
+}
