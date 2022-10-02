@@ -66,7 +66,7 @@ const form1 = document.forms[0];
 const form2 = document.forms[1];
 
 form1.addEventListener("submit", function (e){
-    if(form1.userPassword.value.length == 0 || form1.userName.value.length == 0){
+    if(form1.password.value.length == 0 || form1.userName.value.length == 0){
         e.preventDefault();
     }
 });
@@ -85,13 +85,25 @@ let inputs = document.querySelectorAll(".check");
 
 form2.addEventListener("submit", showError);
 function showError(){
-    console.log(errors.length)
-    console.log(inputs.length)
     for(let i = 0; i < inputs.length; i++){
         if(inputs[i].value.length == 0){
             errors[i].style.display = "block";
         }else{
             errors[i].style.display = "none";
+        }
+    }
+};
+
+let errors1 = document.querySelectorAll(".red1");
+let inputs1 = document.querySelectorAll(".check1");
+
+form1.addEventListener("submit", showError1);
+function showError1(){
+    for(let i = 0; i < inputs1.length; i++){
+        if(inputs1[i].value.length == 0){
+            errors1[i].style.display = "block";
+        }else{
+            errors1[i].style.display = "none";
         }
     }
 };

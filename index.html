@@ -25,11 +25,12 @@
 
             <form name="loginForm">
                 <p class="userInfo">Username</p>
-                <input placeholder="Enter your username" name="userName" class="inputUserInfo" type="text">
+                <input placeholder="Enter your username" minlength="2" maxlength="15" name="userName" class="inputUserInfo check1" type="text">
+                <p class="rightSide red1">Це поле обов'язкове для вводу</p>
                 <p class="userInfo">Password</p>
                 <div>
-                    <input placeholder="Enter your password" class="inputUserInfo position" id="password1" name="password" type="password">
-<!--                    <p class="rightSide red">Це поле обов'язкове для вводу</p>-->
+                    <input placeholder="Enter your password" minlength="8" maxlength="18" class="inputUserInfo position check1" id="password1" name="password" type="password">
+                    <p class="rightSide red1">Це поле обов'язкове для вводу</p>
                     <i class="bi bi-eye-slash" id="togglePassword1"></i>
                 </div>
                 <p class="forgotPassword rightSide">Forgot Password?</p>
@@ -45,20 +46,20 @@
 
             <form name="registration">
                 <p class="userInfo">First name</p>
-                <input placeholder="Enter your first name" class="inputUserInfo check" name="userFirstName" type="text">
+                <input placeholder="Enter your first name" minlength="2" maxlength="15" class="inputUserInfo check" name="userFirstName" type="text">
                 <p class="rightSide red">Це поле обов'язкове для вводу</p>
                 <p class="userInfo">Last name</p>
-                <input placeholder="Enter your last name" class="inputUserInfo check" name="userLastName" type="text">
+                <input placeholder="Enter your last name" minlength="2" maxlength="15" class="inputUserInfo check" name="userLastName" type="text">
                 <p class="rightSide red">Це поле обов'язкове для вводу</p>
                 <p class="userInfo">Username</p>
-                <input placeholder="Enter your username" class="inputUserInfo check" name="username" type="text">
+                <input placeholder="Enter your username" minlength="2" maxlength="15" class="inputUserInfo check" name="username" type="text">
                 <p class="rightSide red">Це поле обов'язкове для вводу</p>
                 <p class="userInfo">Email</p>
                 <input placeholder="Enter your email" class="inputUserInfo check" type="email">
                 <p class="rightSide red">Це поле обов'язкове для вводу</p>
                 <p class="userInfo">Password</p>
                 <div>
-                    <input placeholder="Enter your password" class="inputUserInfo position check" id="password" name="password" type="password">
+                    <input placeholder="Enter your password" minlength="8" maxlength="18" class="inputUserInfo position check" id="password" name="password" type="password">
                     <p class="rightSide red">Це поле обов'язкове для вводу</p>
                     <i class="bi bi-eye-slash" id="togglePassword"></i>
                 </div>
